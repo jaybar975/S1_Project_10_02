@@ -13,15 +13,17 @@
 
 
 /* Transition Styles */
+/* This sets the nav and a element with a background image from a photo called "ba_target.png, a background position to center, a background repeat to no repeat, the background size to 0 percent, the color to red blue green of (253, 240, 133), and a transition of background size to 0.3 seconds ease in and the color to 0.8 seconds */
 nav a {
     background-image: url(ba_target.png);
     background-position: center;
     background-repeat: no-repeat;
-    size: 0%;
+    background-size: 0%;
     color: rgb(253, 240, 133);
-    transition: background-size 0.3s color 0.8s;
+    transition: background-size 0.3s ease-in, color 0.8s;
 }
 
+/* This creates the nav and a element with a pseudo class of hover with a background size of 100 percent and a color to red blue green of (244, 130, 130) */
 nav a:hover {
     background-size: 100%;
     color: rgb(244, 130, 130);
@@ -30,90 +32,144 @@ nav a:hover {
 
 
 /* Animation Styles */
-@keyframes showText {
-    0% {
-        opacity: 0;
-    }
-
-    49% {
-        opacity: 0;
-    }
-
-    51% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes hideText {
-    0% {
-        opacity: 1;
-    }
-
-    49% {
-        opacity: 1;
-    }
-
-    51% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
+/* This creates the @keyframes of moveRed with a 0% of left 0 pixels and a filter for a drop shadow of negative 40 pixels, 20 pixels, and 25 pixels, with a red blue green of (51, 51, 51) */
 @keyframes moveRed {
     0% {
         left: 0px;
         filter: drop-shadow(-40px 20px 25px rgb(51, 51, 51));
     }
 
+    /* 49 percent sets the transform to a scaleX of 1 */
     49% {
         transform: scaleX(1)
     }
 
+    /* 50 percent sets the left of 380 pixels, a filter of drop shadow of 0 pixels, 0 pixels, 0 pixels, and a red blue green of (51, 51, 51) and a transform of scaleX to 0.4 */
     50% {
         left: 380px;
         filter: drop-shadow(0px 0px 0px rgb(51, 51, 51));
         transform: scaleX(0.4);
     }
 
+    /*51 percent sets the transform of scaleX to 1.0  */
     51% {
         transform: scaleX(1.0);
     }
 
+    /* 100 percent sets the left to 0 percent and a filter of a drop shadow to -40 pixels, 20 pixels, and 25 pixels with a red blue green of (51, 51, 51) */
     100% {
         left: 0%;
         filter: drop-shadow(-40px 20px 25px rgb(51, 51, 51));
     }
 }
 
+/* This creates the keyframes of moveBlue */
 @keyframes moveBlue {
+
+    /* 0 percent sets the right to 0 pixels and a filter for a drop shadow to 40 pixels, 20 pixels, and 25 pixels with a red blue green of (51, 51, 51) */
     0% {
         right: 0px;
         filter: drop-shadow(40px 20px 25px rgb(51, 51, 51));
     }
 
+    /* 49 percent sets the trasnform of scaleX to 1 */
     49% {
         transform: scaleX(1);
     }
 
+    /* 50 percent sets the right to 380 pixels, a filter for a drop shadow of 40 pixels, 20 pixels, and 25 pixels with a red blue green of (51, 51, 51) and a transform of scaleX to 0.4 */
     50% {
         right: 380px;
         filter: drop-shadow(40px 20px 25px rgb(51, 51, 51));
         transform: scaleX(0.4);
     }
 
+    /* 51 percent sets the transform of scaleX to 1 */
     51% {
         transform: scaleX(1);
     }
 
+    /* 100 percent sets the right to 0 pixels, and a filter for a drop shadow of 120 pixels, 20 pixels, and 25 pixels with a red blue green of (51, 51, 51) */
     100% {
         right: 0px;
         filter: drop-shadow(120px 20px 25px rgb(51, 51, 51));
     }
+}
+
+/* This creates the keyframes of showText */
+@keyframes showText {
+
+    /* 0 percent sets the opactity to 0 */
+    0% {
+        opacity: 0;
+    }
+
+    /* 49 percent sets the opactity to 0 */
+    49% {
+        opacity: 0;
+    }
+
+    /* 51 percent sets the opactity to 1 */
+    51% {
+        opacity: 1;
+    }
+
+    /* 100 percent sets the opactity to 1 */
+    100% {
+        opacity: 1;
+    }
+}
+
+/* This creates the keyframes of hideText */
+@keyframes hideText {
+
+    /* 0 percent sets the opactity to 1 */
+    0% {
+        opacity: 1;
+    }
+
+    /* 49 percent sets the opactity to 1 */
+    49% {
+        opacity: 1;
+    }
+
+    /* 51 percent sets the opactity to 0 */
+    51% {
+        opacity: 0;
+    }
+
+    /* 100 percent sets the opactity to 0 */
+    100% {
+        opacity: 0;
+    }
+}
+
+/* This creates the image element with a id called redBall an animation of moveRed, 5 seconds, linear, and infinite */
+img#redBall {
+    animation: moveRed 5s linear infinite;
+}
+
+/* This creates the image element with a id called blueBall an animation of moveBlue, 5 seconds, linear, and infinite */
+img#blueBall {
+    animation: moveBlue 5s linear infinite;
+}
+
+/* This creates the div element with a id called redSpeed1 an animation of redSpeed1, 5 seconds, linear, and infinite */
+div#redSpeed1 {
+    animation: redSpeed1 5s linear infinite;
+}
+
+/* This creates the div element with a id called blueSpeed1 an animation of blueSpeed1, 5 seconds, linear, and infinite */
+div#blueSpeed1 {
+    animation: blueSpeed1 5s linear infinite;
+}
+
+/* This creates the div element with a id called redSpeed2 an animation of redSpeed2, 5 seconds, linear, and infinite */
+div#redSpeed2 {
+    animation: redSpeed2 5s linear infinite;
+}
+
+/* This creates the image element with a id called blueSpeed2 an animation of blueSpeed2, 5 seconds, linear, and infinite */
+div#blueSpeed2 {
+    animation: bluespeed2 5s linear infinite;
 }
