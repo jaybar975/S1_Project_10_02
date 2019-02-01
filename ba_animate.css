@@ -23,7 +23,7 @@ nav a {
     transition: background-size 0.3s ease-in, color 0.8s;
 }
 
-/* This creates the nav and a element with a pseudo class of hover with a background size of 100 percent and a color to red blue green of (244, 130, 130) */
+/* This sets the nav and a element with a pseudo class of hover with a background size of 100 percent and a color to red blue green of (244, 130, 130) */
 nav a:hover {
     background-size: 100%;
     color: rgb(244, 130, 130);
@@ -32,7 +32,7 @@ nav a:hover {
 
 
 /* Animation Styles */
-/* This creates the @keyframes of moveRed with a 0% of left 0 pixels and a filter for a drop shadow of negative 40 pixels, 20 pixels, and 25 pixels, with a red blue green of (51, 51, 51) */
+/* This sets the @keyframes of moveRed with a 0% of left 0 pixels and a filter for a drop shadow of negative 40 pixels, 20 pixels, and 25 pixels, with a red blue green of (51, 51, 51) */
 @keyframes moveRed {
     0% {
         left: 0px;
@@ -63,7 +63,7 @@ nav a:hover {
     }
 }
 
-/* This creates the keyframes of moveBlue */
+/* This sets the keyframes of moveBlue */
 @keyframes moveBlue {
 
     /* 0 percent sets the right to 0 pixels and a filter for a drop shadow to 40 pixels, 20 pixels, and 25 pixels with a red blue green of (51, 51, 51) */
@@ -96,7 +96,7 @@ nav a:hover {
     }
 }
 
-/* This creates the keyframes of showText */
+/* This sets the keyframes of showText */
 @keyframes showText {
 
     /* 0 percent sets the opactity to 0 */
@@ -120,7 +120,7 @@ nav a:hover {
     }
 }
 
-/* This creates the keyframes of hideText */
+/* This sets the keyframes of hideText */
 @keyframes hideText {
 
     /* 0 percent sets the opactity to 1 */
@@ -144,32 +144,32 @@ nav a:hover {
     }
 }
 
-/* This creates the image element with a id called redBall an animation of moveRed, 5 seconds, linear, and infinite */
+/* This sets the image element with a id called redBall an animation of moveRed, 5 seconds, linear, and infinite */
 img#redBall {
     animation: moveRed 5s linear infinite;
 }
 
-/* This creates the image element with a id called blueBall an animation of moveBlue, 5 seconds, linear, and infinite */
+/* This sets the image element with a id called blueBall an animation of moveBlue, 5 seconds, linear, and infinite */
 img#blueBall {
     animation: moveBlue 5s linear infinite;
 }
 
-/* This creates the div element with a id called redSpeed1 an animation of redSpeed1, 5 seconds, linear, and infinite */
+/* This sets the div element with a id called redSpeed1 an animation of redSpeed1, 5 seconds, linear, and infinite */
 div#redSpeed1 {
     animation: redSpeed1 5s linear infinite;
 }
 
-/* This creates the div element with a id called blueSpeed1 an animation of blueSpeed1, 5 seconds, linear, and infinite */
+/* This sets the div element with a id called blueSpeed1 an animation of blueSpeed1, 5 seconds, linear, and infinite */
 div#blueSpeed1 {
     animation: blueSpeed1 5s linear infinite;
 }
 
-/* This creates the div element with a id called redSpeed2 an animation of redSpeed2, 5 seconds, linear, and infinite */
+/* This sets the div element with a id called redSpeed2 an animation of redSpeed2, 5 seconds, linear, and infinite */
 div#redSpeed2 {
     animation: redSpeed2 5s linear infinite;
 }
 
-/* This creates the image element with a id called blueSpeed2 an animation of blueSpeed2, 5 seconds, linear, and infinite */
+/* This sets the image element with a id called blueSpeed2 an animation of blueSpeed2, 5 seconds, linear, and infinite */
 div#blueSpeed2 {
     animation: bluespeed2 5s linear infinite;
 }
